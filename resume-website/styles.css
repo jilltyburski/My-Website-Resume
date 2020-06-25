@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* background: rgb(251,255,248);
+  background: linear-gradient(349deg, rgba(251,255,248,1) 0%, rgba(240,255,242,1) 100%);
+} */
+}
+
+body {
+
+}
+
+.page {
+
+}
+
+nav {
+  margin: 0 auto;
+  width: 77%;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+nav ul li {
+  padding: 0px 20px 2px 20px;
+  font-family: 'Lato', sans-serif;
+  margin-top: 19px;
+  /* border-bottom: 3px solid #2ECC71; */
+  border-bottom: 3px solid #245760;
+
+
+}
+
+nav ul li:hover {
+
+
+}
+
+.header {
+  /* background-image: url(images/AdobeStock_217810326_Preview.jpeg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  width: 85%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 7px 0 rgba(0,0,0,0.2);
+  background-position: top;
+  transition: background-position 1.4s;
+  transition-timing-function: ease-in-out;
+  overflow: hidden;
+  background-image: url(images/rose.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: brightness(110%); */
+
+
+}
+
+.intro {
+  border: 7px solid white;
+  border-radius: 2px;
+  width: 90%;
+  min-height: 250px;
+  padding: 30px;
+  /* background-color: rgba(217, 234, 238); */
+  background-color: #E2FAFF;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
+
+}
+
+.header h2 {
+  font-weight: normal;
+  padding-left: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.9rem;
+  font-family: 'Francois One', sans-serif;
+
+}
+
+.header p {
+  padding-top: 15px;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 25px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+
+.button:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+
+}
+
+.education, .skills , .experience {
+  border-top: 50px solid #245760;
+  background-color: rgba(217, 234, 238);
+  box-shadow: 0 1px 7px 0 rgba(0,0,0,0.2);
+  margin-bottom: 50px;
+}
+
+.education {
+  flex: 1.5;
+  min-height: 500px;
+}
+
+.skills {
+  margin-left: 20px;
+  flex: 2;
+  min-height: 500px;
+}
+
+.experience {
+    width: 100%;
+    min-height: 700px;
+}
+
+.education h2, .skills h2, .experience h2 {
+  font-family: 'Francois One', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: -62px;
+  color: rgba(217, 234, 238);
+  text-shadow: 0px -2px black;
+}
+
+#skills {
+  background-color: #E9FAFF;
+}
+
+#skills h2 {
+  color: #E9FAFF;
+}
+
+main p {
+  font-family: 'Lato', sans-serif;
+}
+
+.skill-button {
+  border: 2px solid white;
+  background-color: white;
+
+  padding: 50px;
+  margin-top: 25px;
+  display: inline-block;
+
+}
