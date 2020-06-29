@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lesson1 , .lesson2, .lesson3, .lesson4 {
+  margin-top: 10px;
+  padding: 30px 0px;
+  background-color: lightblue;
+  cursor: pointer;
+
+}
+
+.expand-lesson1, .expand-lesson2, .expand-lesson3, .expand-lesson4 {
+  display: none;
+  background-color: lightblue;
+
+}
+
+
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+h4 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
