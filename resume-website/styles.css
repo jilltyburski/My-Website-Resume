@@ -6,9 +6,9 @@
 
 html {
   scroll-behavior: smooth;
-  /* background: rgb(251,255,248);
+  background: rgb(251,255,248);
   background: linear-gradient(349deg, rgba(251,255,248,1) 0%, rgba(240,255,242,1) 100%);
-} */
+
 }
 
 body {
@@ -22,7 +22,6 @@ body {
 nav {
   margin: 0 auto;
   width: 77%;
-
 }
 
 nav ul {
@@ -38,14 +37,14 @@ nav ul li {
   font-family: 'Lato', sans-serif;
   margin-top: 19px;
   /* border-bottom: 3px solid #2ECC71; */
-  border-bottom: 3px solid #245760;
+  border-bottom: 4px solid #245760;
 
 
 }
 
 nav ul li:hover {
-
-
+  border-bottom: 4px solid #DF0000;
+  transition: border-bottom, .2s;
 }
 
 .header {
@@ -53,7 +52,7 @@ nav ul li:hover {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 70px;
   width: 85%;
   min-height: 400px;
@@ -84,6 +83,8 @@ nav ul li:hover {
   box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
 
 }
+
+
 
 .header h2 {
   font-weight: normal;
@@ -116,8 +117,7 @@ a {
   background-color: white;
   border-radius: 5px;
   padding: 10px;
-  margin-top: 25px;
-  display: inline-block;
+
   cursor: pointer;
   font-family: 'Oswald', sans-serif;
 }
@@ -132,6 +132,7 @@ a {
 main {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
   width: 85%;
@@ -146,14 +147,40 @@ main {
 }
 
 .education {
-  flex: 1.5;
-  min-height: 500px;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+
 }
 
-.skills {
+.degrees {
+  width: 60%;
   margin-left: 20px;
-  flex: 2;
-  min-height: 500px;
+  padding: 40px;
+
+}
+
+.courses {
+  width: 40%;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+}
+
+.courses li  {
+  list-style-type: none;
+
+}
+
+.schooling {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.skills-content {
+  padding: 20px 40px;
 }
 
 .experience {
@@ -167,9 +194,9 @@ main {
   font-size: 3rem;
   text-align: center;
   padding-top: 10px;
-  margin-top: -62px;
+  margin-top: -67px;
   color: rgba(217, 234, 238);
-  text-shadow: 0px -2px black;
+  text-shadow: -2px -2px black;
 }
 
 #skills {
@@ -181,7 +208,8 @@ main {
 }
 
 main p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Arial', sans-serif;
+  margin: 10px 20px;
 }
 
 .skill-button {
@@ -192,4 +220,26 @@ main p {
   margin-top: 25px;
   display: inline-block;
 
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.break {
+  padding-top: 10px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.test {
+  color: red;
+}
+
+.between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

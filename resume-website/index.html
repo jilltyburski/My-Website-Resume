@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Montserrat:wght@400;600&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <title>Jill Tyburski Resume</title>
   </head>
@@ -17,18 +19,18 @@
 
         <nav>
           <ul>
-            <li><a href="#me">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education" class="upper">Education</a></li>
+            <li><a href="#skills" class="upper">Skills</a></li>
+            <li><a href="#experience" class="upper">Experience</a></li>
+            <li><a href="#more" class="upper">Learn More</a></li>
           </ul>
         </nav>
 
         <div class="header">
 
-          <div class="intro" id="me">
+          <div class="intro">
             <h2>Hi, I'm</h2>
-            <h1 id="demo">Jill Tyburski</h1>
+            <h1>Jill Tyburski</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementume.</p>
             <!-- <div class="button">
               <a href="#jump">Learn More</a>
@@ -41,17 +43,61 @@
 
 
       <main class="">
-        <div class="education" id="education">
+        <div  class="education" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" id="education">
           <h2>Education</h2>
+          <div class="schooling">
+            <div class="degrees">
+              <p>University of Pittsburgh, Pittsburgh, PA</p>
+              <p>Fall 2015 - December 2018</p>
+              <p><strong>Bachelor of Arts in Film and Media Studies</strong></p>
+              <p><strong>Bachelor of Arts in English Writing</strong></p>
+
+              <p>Certificate in Digital Media (18 Credit Program)</p>
+              <p>Summa Cum Laude | GPA: 3.9</p>
+            </div>
+            <div class="button" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
+              Relevant Coursework
+            </div>
+            <div class="courses">
+              <h4>Relevant Coursework</h4>
+              <ul>
+                <li>Web Site Design and Development (A+)</li>
+                <li>Composing Digital Media (A)</li>
+                <li>Introduction to Computer Programming with Python (A)</li>
+                <li>Digital Media Certificate (18 credit program focusing on visual literacy, mass communications, and digital media production)</li>
+              </ul>
+            </div>
+          </div>
 
         </div>
-        <div class="skills" id="skills">
+        <div class="skills" data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true" id="skills">
           <h2>Skills</h2>
+          <div class="skills-content">
+            <p class="bold">Web Design and Development</p>
+            <p>Proficient: HTML, CSS, Bootstrap, Atom</p>
+            <p>Beginner: JavaScript, jQuery, Python, Github, Adobe XD</p>
+            <p class="bold break">Other Creative Programs</p>
+            <p>Adobe Premiere Pro, Adobe Illustrator, Adobe Photoshop, Audacity, Microsoft Office Suite</p>
+          </div>
+
         </div>
 
-        <div class="experience" id="experience">
+        <div class="experience" data-aos="fade-up" data-aos-duration="1000"  data-aos-once="true" id="experience">
           <h2>Experience</h2>
-        
+          <div class="between">
+            <div class="location">
+              <h3>Pitt Tonight, University of Pittsburgh</h3>
+            </div>
+            <div class="date">
+              <h3>Fall 2017 – Spring 2019</h3>
+            </div>
+          </div>
+          <div class="job">
+            <h3>Producer and Head of Stage Production</h3>
+          </div>
+          <div class="description">
+
+          </div>
         </div>
 
       </main>
@@ -62,7 +108,23 @@
 
 
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous">
+    </script>
 
+    <script>
+      AOS.init();
+
+      $(document).ready(function(){
+        $(".button").click(function(){
+          $(".courses").show();
+          $(".button").hide();
+        });
+      });
+    </script>
 
 
   </body>
