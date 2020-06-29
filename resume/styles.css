@@ -4,21 +4,75 @@
   padding: 0;
 }
 
-.lesson1 , .lesson2, .lesson3, .lesson4 {
+.lesson2, .lesson3, .lesson4 {
   margin-top: 10px;
-  padding: 30px 0px;
+  padding: 10px 0px;
   background-color: lightblue;
   cursor: pointer;
 
+
 }
 
-.expand-lesson1, .expand-lesson2, .expand-lesson3, .expand-lesson4 {
+.expand-lesson2, .expand-lesson3, .expand-lesson4 {
   display: none;
   background-color: lightblue;
 
+
+}
+
+.lesson {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 0px;
+  background-color: rgba(171, 247, 251);
+  cursor: pointer;
+  margin-top: 7px;
+
+}
+
+.lesson:hover {
+    background-color: rgba(150, 213, 216);
 }
 
 
+.expand-lesson {
+  display: none;
+  min-height: 200px;
+  background-color: rgba(150, 213, 216);
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.expand-lesson h4 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .description {
+  background-color: lightblue;
+} */
+
+.test {
+
+}
+
+
+
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
 
 li {
   list-style-type: none;
