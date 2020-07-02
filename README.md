@@ -1,2 +1,3 @@
 # resume
-resume website
+website version of my resume 
+(work in progress)
