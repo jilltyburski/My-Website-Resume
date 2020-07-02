@@ -18,7 +18,6 @@ body {
 
 
 
-
  /* Nav Bar */
 
 nav a {
@@ -41,6 +40,7 @@ nav ul {
 nav ul li {
   padding: 0px 20px 2px 20px;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
   margin-top: 19px;
   font-size: 1rem;
   border-bottom: 4px solid #245760;
@@ -81,10 +81,14 @@ nav ul li:hover {
 }
 
 .intro h3 {
-  padding-left: 13px;
+  padding-left: 10px;
   font-weight: 400;
   font-size: 1.4rem;
 }
+
+/* h1 {
+  font-family: "Francois One", sans-serif;
+} */
 
 
 
@@ -234,7 +238,7 @@ nav ul li:hover {
 }
 
 .color2 {
-  background-color: rgb(195, 248, 250);
+  background-color: lightblue;
 }
 
 
@@ -254,17 +258,15 @@ nav ul li:hover {
  /* Section Headings */
 
  .education h2,  .experience h2 {
-   /* font-family: 'Francois One', sans-serif; */
    font-weight: 400;
    font-size: 2.9rem;
    text-align: center;
    color: white;
-   text-shadow: 0px 2px black;
+   /* text-shadow: 0px 2px black; */
    background-color: #245760;
  }
 
  .skills h2 {
-   /* font-family: 'Francois One', sans-serif; */
    font-weight: 400;
    font-size: 2.9rem;
    width: 70%;
@@ -272,7 +274,7 @@ nav ul li:hover {
    padding-right: 15px;
    color: white;
    text-align: center;
-   text-shadow: 0px 2px black;
+   /* text-shadow: 0px 2px black; */
    background-color: #245760;
    margin-bottom: 20px;
  }
@@ -293,4 +295,8 @@ footer {
 
 strong {
   font-weight: 500;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
 }
