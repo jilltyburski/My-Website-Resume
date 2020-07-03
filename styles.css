@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(253,255,252);
+  background: linear-gradient(329deg, rgba(253,255,252,1) 0%, rgba(248,255,248,1) 100%);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
+
+ /* Nav Bar */
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+nav ul li {
+  padding: 0px 20px 2px 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin-top: 19px;
+  font-size: 1rem;
+  border-bottom: 4px solid #245760;
+
+}
+
+nav ul li:hover {
+  border-bottom: 4px solid #DF0000;
+  transition: border-bottom, .4s;
+}
+
+
+
+
+ /* Header */
+
+.header-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 375px;
+  box-shadow: 0 1px 7px 0 rgba(0,0,0,0.2);
+  background-position: right;
+
+  overflow: hidden;
+  background-image: url(images/rose.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro {
+  border: 7px solid white;
+  border-radius: 2px;
+  width: 90%;
+  min-height: 225px;
+  padding: 30px;
+  background-color: #F2FDFF;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
+}
+
+.intro h3 {
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+
+
+
+
+
+ /* Main Content */
+ /* Education Section */
+
+ .school {
+   background-color: lightblue;
+ }
+
+ .courses {
+   background-color: rgb(202, 241, 246);
+ }
+
+ .courses li {
+   list-style-type: disc;
+   list-style-position: inside;
+ }
+
+ .courses h5 {
+   font-weight: 400;
+   font-size: .9rem;
+
+ }
+
+ .education h4 {
+   font-weight: 400;
+ }
+
+
+
+ .experience h3, .education h3 {
+   font-size: 1.2rem;
+   font-weight: 400;
+ }
+
+ .experience h4, .education h4 {
+   font-size: 1.1rem;
+ }
+
+
+
+
+ /* Skills Section */
+
+ .rotate {
+   position: relative;
+   background-color: rgba(210, 248, 228, 0.8);
+
+   transform: rotate(-2deg);
+   padding: 20px;
+   z-index: -1;
+
+ }
+
+ .text {
+   position: relative;
+   z-index: 1;
+   transform: rotate(2deg);
+ }
+
+ .skill {
+   border: 1px solid lightgray;
+   box-shadow: 1px 1px #A9A9A9;
+   margin: 5px;
+   padding: 4px;
+   display: inline-block;
+   font-size: .9rem;
+   background-color: white;
+ }
+
+
+ .skills h5 {
+   font-weight: 400;
+   font-size: .9rem;
+
+ }
+
+ .skills h3 {
+   font-size: 1.2rem;
+   padding: 10px 0px;
+   font-weight: 500;
+ }
+
+ .skills h4 {
+   font-size: 1.1rem;
+   font-weight: 400;
+ }
+
+
+
+
+
+ /* Work Experience Section */
+
+.lesson {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.details {
+  min-height: 95%;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.details h4 {
+  text-align: center;
+}
+
+.s-hidden {
+  display: none;
+}
+
+.s-open {
+
+}
+
+.except {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ .job {
+   padding: 10px 10px 0px 10px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+
+ }
+
+ .title {
+   border-bottom: 1px solid #ECF0F1;
+ }
+
+
+.color1 {
+  background-color: rgb(202, 241, 246);
+}
+
+.color2 {
+  background-color: lightblue;
+}
+
+
+.color1:hover, .color2:hover {
+  background-color: rgba(155, 190, 193, 0.7);
+}
+
+.details li {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: .8rem;
+}
+
+
+
+
+ /* Section Headings */
+
+ .education h2,  .experience h2 {
+   font-weight: 400;
+   font-size: 2.9rem;
+   text-align: center;
+   color: white;
+   /* text-shadow: 0px 2px black; */
+   background-color: #245760;
+ }
+
+ .skills h2 {
+   font-weight: 400;
+   font-size: 2.9rem;
+   width: 70%;
+   padding-left: 15px;
+   padding-right: 15px;
+   color: white;
+   text-align: center;
+   /* text-shadow: 0px 2px black; */
+   background-color: #245760;
+   margin-bottom: 20px;
+ }
+
+
+
+/* Footer */
+
+footer {
+  background-color: #245760;
+  height: 150px;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: white;
+}
+
+
+
+
+
+/* General */
+
+strong {
+  font-weight: 500;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
