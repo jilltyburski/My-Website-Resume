@@ -9,11 +9,14 @@ html {
 }
 
 body {
-  background: rgb(253,255,252);
-  background: linear-gradient(329deg, rgba(253,255,252,1) 0%, rgba(245,255,245,1) 100%);
-
-  font-family: 'Roboto', sans-serif;
+  background: rgb(251,251,251);
+  background: linear-gradient(318deg, rgba(251,251,251,1) 0%, rgba(255,250,249,1) 100%);
   font-weight: 300;
+}
+
+.page {
+  width: 85%;
+  margin: 0 auto;
 }
 
 
@@ -49,7 +52,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  border-bottom: 4px solid #DF0000;
+  border-bottom: 4px solid rgba(210, 248, 228);
   transition: border-bottom, .4s;
 }
 
@@ -60,33 +63,34 @@ nav ul li:hover {
  /* Header */
 
 .header-bg {
-  background-repeat: no-repeat;
+  min-height: 500px;
+  background-image: url(images/geo-pattern9.png);
   background-size: cover;
-  min-height: 375px;
-  box-shadow: 0 1px 7px 0 rgba(0,0,0,0.2);
-  background-position: right;
-  background-image: url(images/geo-pattern.png);
-  background-size: cover;
-  /* border: 7px solid white; */
+  background-position: center;
   border-radius: 2px;
   overflow: hidden;
-  background-image: url(images/rose.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+
+
 }
 
 .intro {
   border: 7px solid white;
   border-radius: 2px;
-  width: 90%;
-  min-height: 225px;
+  width: 80%;
+  min-height: 350px;
   padding: 30px;
   background-color: #F2FDFF;
   box-shadow: 0 1px 10px 0 rgba(0,0,0,0.4);
 }
 
+.intro h1 {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 2.9rem;
+}
+
 .intro h3 {
-  padding-left: 10px;
+  padding-left: 6px;
   font-weight: 400;
   font-size: 1.4rem;
 }
@@ -100,7 +104,7 @@ nav ul li:hover {
  /* Education Section */
 
  .school {
-   background-color: lightblue;
+   background-color: #BBDFEE;
  }
 
  .courses {
@@ -155,7 +159,7 @@ nav ul li:hover {
  }
 
  .skill {
-   border: 1px solid lightgray;
+   border: 1px outset lightgray;
    box-shadow: 1px 1px #A9A9A9;
    margin: 5px;
    padding: 4px;
@@ -258,8 +262,9 @@ nav ul li:hover {
  /* Section Headings */
 
  .education h2,  .experience h2 {
-   font-weight: 400;
-   font-size: 2.9rem;
+   font-family: 'Roboto';
+   font-weight: 300;
+   font-size: 2.7rem;
    text-align: center;
    color: white;
    /* text-shadow: 0px 2px black; */
@@ -268,8 +273,9 @@ nav ul li:hover {
  }
 
  .skills h2 {
-   font-weight: 400;
-   font-size: 2.9rem;
+   font-family: 'Roboto';
+   font-weight: 300;
+   font-size: 2.7rem;
    width: 70%;
    padding-left: 15px;
    padding-right: 15px;
@@ -319,15 +325,39 @@ h2 {
 
 
 
+/*  Custom Media Queries */
 
-@media only screen and (max-width: 600px) {
+/* Tablet */
+@media only screen and (max-width: 768px) {
 
   .skills h2 {
     width: 90%;
   }
 
-  .arrow {
+
+  /* Open all job descriptions on mobile and
+  tablets for easier viewing */
+
+  .s-hidden {
+    display: block;
+  }
+
+  .s-open {
     display: none;
+  }
+
+ }
+
+
+/* Mobile */
+@media only screen and (max-width: 576px) {
+
+  .page {
+    width: 100%;
+  }
+
+  .intro {
+    width: 100%;
   }
 
  }
