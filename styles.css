@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background: rgb(251,251,251);
-  background: linear-gradient(318deg, rgba(251,251,251,1) 0%, rgba(255,250,249,1) 100%);
+  background: rgb(255,255,255);
+  background: linear-gradient(199deg, rgba(255,255,255,1) 0%, rgba(247,255,245,1) 49%);
   font-weight: 300;
 }
 
@@ -43,7 +43,7 @@ nav ul {
 
 nav ul li {
   padding: 0px 20px 2px 20px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin-top: 19px;
   font-size: 1rem;
@@ -53,7 +53,7 @@ nav ul li {
 
 nav ul li:hover {
   border-bottom: 4px solid rgba(210, 248, 228);
-  transition: border-bottom, .4s;
+  transition: border-bottom, .2s;
 }
 
 
@@ -69,8 +69,6 @@ nav ul li:hover {
   background-position: center;
   border-radius: 2px;
   overflow: hidden;
-
-
 }
 
 .intro {
@@ -84,16 +82,17 @@ nav ul li:hover {
 }
 
 .intro h1 {
-  font-family: 'Lora', serif;
-  font-weight: 500;
-  font-size: 2.9rem;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 900;
+  font-size: 2.8rem;
 }
 
 .intro h3 {
-  padding-left: 6px;
+  padding-left: 4px;
   font-weight: 400;
   font-size: 1.4rem;
 }
+
 
 
 
@@ -104,11 +103,11 @@ nav ul li:hover {
  /* Education Section */
 
  .school {
-   background-color: #BBDFEE;
+   background-color: rgba(187, 223, 238, 0.8);
  }
 
  .courses {
-   background-color: rgb(202, 241, 246);
+   background-color: rgba(220,242,255, 0.8);
  }
 
  .courses li {
@@ -145,7 +144,6 @@ nav ul li:hover {
  .rotate {
    position: relative;
    background-color: rgba(210, 248, 228, 0.8);
-
    transform: rotate(-2deg);
    padding: 20px;
    z-index: -1;
@@ -154,18 +152,18 @@ nav ul li:hover {
 
  .text {
    position: relative;
-   z-index: 1;
+   z-index: auto;
    transform: rotate(2deg);
  }
 
  .skill {
-   border: 1px outset lightgray;
-   box-shadow: 1px 1px #A9A9A9;
+   box-shadow: 0px 1px 2px #A9A9A9;
    margin: 5px;
    padding: 4px;
    display: inline-block;
    font-size: .9rem;
-   background-color: white;
+   background: rgb(255,255,255);
+   background: linear-gradient(177deg, rgba(255,255,255,1) 10%, rgba(242,242,242,1) 100%);
  }
 
 
@@ -216,10 +214,6 @@ nav ul li:hover {
   display: none;
 }
 
-.s-open {
-
-}
-
  .job {
    padding: 10px 10px 0px 10px;
    margin-bottom: 20px;
@@ -244,7 +238,7 @@ nav ul li:hover {
 }
 
 .color2 {
-  background-color: lightblue;
+  background-color: rgba(187, 223, 238, 0.8);;
 }
 
 
@@ -259,21 +253,22 @@ nav ul li:hover {
 }
 
 
+
+
  /* Section Headings */
 
  .education h2,  .experience h2 {
-   font-family: 'Roboto';
+   font-family: 'Roboto', sans-serif;
    font-weight: 300;
    font-size: 2.7rem;
    text-align: center;
    color: white;
-   /* text-shadow: 0px 2px black; */
-   background-color: #245760;
+   background-color: rgb(36,87,96);
 
  }
 
  .skills h2 {
-   font-family: 'Roboto';
+   font-family: 'Roboto', sans-serif;
    font-weight: 300;
    font-size: 2.7rem;
    width: 70%;
@@ -281,10 +276,10 @@ nav ul li:hover {
    padding-right: 15px;
    color: white;
    text-align: center;
-   /* text-shadow: 0px 2px black; */
-   background-color: #245760;
+   background-color: rgb(36,87,96);
    margin-bottom: 20px;
  }
+
 
 
 
@@ -344,6 +339,14 @@ h2 {
 
   .s-open {
     display: none;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .lesson {
+    text-align: center;
   }
 
  }
