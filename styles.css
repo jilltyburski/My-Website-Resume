@@ -249,7 +249,7 @@ nav ul li:hover {
 .details li {
   list-style-type: none;
   list-style-position: inside;
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 
@@ -285,12 +285,27 @@ nav ul li:hover {
 
 /* Footer */
 
+.no-margin {
+  margin:0 !important;
+  padding:0 ! important;
+}
+
 footer {
   background-color: #245760;
-  height: 150px;
+  min-height: 150px;
   margin-top: 100px;
-  text-align: center;
   color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+footer h3 {
+  font-size: .9rem;
+}
+
+footer p {
+  font-size: .8rem;
 }
 
 footer a {
