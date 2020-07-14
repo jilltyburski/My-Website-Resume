@@ -1,5 +1,5 @@
 # resume
-website version of my resume 
-(work in progress)
+Website Version of My Resume:
+https://jilltyburski.github.io/Resume/
 
- https://jilltyburski.github.io/Resume/
+(Published 7/14/20)
